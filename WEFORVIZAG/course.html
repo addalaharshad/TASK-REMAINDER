@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>course name</title>
+	<style>
+		*{
+			text-align: center;
+		}
+		body{
+             background-image:url(hell.png);
+             padding-top: 80px;
+             padding-right: 550px;
+
+		}
+		h1{
+			font-style: italic;
+			text-decoration-line: underline;
+		}
+        .harsh{
+        	padding-top: 150px;
+        }
+        button {
+	border-radius: 20px;
+	border: 1px solid #FF4B2B;
+	background-color: #FF4B2B;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+input{
+	padding-left: 50px;
+	padding-top: 8px;
+	padding-right: 25px;
+	}
+	</style>
+</head>
+<body>
+	<div class="harsh">
+    <form method="POST" action="course.php">
+	<h1>ENROLL COURSE</h1>
+	<label for="email"><b>Student Id:</b></label>
+    <input type="text" placeholder="Enter sid" name="sid" id="email" required><br><br>
+    <label for="email"><b>Course Name:</b></label>
+	<input type="text" name="coursename" placeholder="coursename"><br><br>
+	<button>ENROLL</button>
+    </form>
+    </div>
+</body>
+</html>
